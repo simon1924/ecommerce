@@ -17,14 +17,14 @@ app.get("/", (req, response) => {
 
 })
 
-app.get("/categorie", (req, res) => {
-    const db = conn.istanza();
-    let categorie = db.ottieniCategorie();
+// app.get("/categorie", (req, res) => {
+//     const db = conn.istanza();
+//     let categorie = db.ottieniCategorie();
 
-    categorie
-    .then(data => res.json({"data":data}))
-    .catch(err => console.log(`c'è un errore in app.get di ottieniCategorie ${err}`));
-})
+//     categorie
+//     .then(data => res.json({"data":data}))
+//     .catch(err => console.log(`c'è un errore in app.get di ottieniCategorie ${err}`));
+// })
 
 app.get("/Mobiles", (req, res) => {
     const primo = conn.istanza();
